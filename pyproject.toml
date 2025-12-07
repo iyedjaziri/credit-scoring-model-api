@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Credit Scoring Project with MLOps"
 authors = ["Iyed Jaziri <iyedjaziri@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/iyedjaziri/credit-scoring-model-api"
 package-mode = false
 
 [tool.poetry.dependencies]
