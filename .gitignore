@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Data (Assuming data is large and shouldn't be committed, but kept locally)
+# Keep small config files or sample data if needed, but ignore large/processed CSVs if they can be regenerated.
+# User's request mentioned "Ajoutez les fichiers de votre modèle", but usually data is separate. 
+# We'll ignore the data directory content but keep the folder structure if possible, 
+# or explicit excludes. 
+# Given previous context, P6/data exists.
+data/
+!data/.gitkeep
+
+# Models (If very large, might use DVC, but user asked to commit model files)
+# "Ajoutez les fichiers de votre modèle au dépôt" implies we SHOULD commit them or use LFS.
+# For now, we won't ignore models unless they are massive.
+# mlruns often contain many small files or large artifacts.
+mlruns/
+.trash/
+
+# Logs
+logs/
+*.log
+production_logs.json
+
+# Docker
+.dockerignore
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
